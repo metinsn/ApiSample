@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; connect-src 'self' https://bgapitest.azurewebsites.net/api/user">
+        
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/w3.css">
+        <title>Mobile</title>
+    </head>
+    <body>
+
+        <label>First Name</label>
+        <input class="w3-input" type="text" id="fname">
+        <label>Last Name</label>
+        <input class="w3-input" type="text" id="lname"><br />
+        <button class="w3-button w3-blue" id="btnEkle" style="width: 100%;"> Ekle </button>
+        <br /><br />
+        <div id="list">
+            <button class="w3-button w3-green" id="btnGetir" style="width: 100%;"> Getir </button><br /><br />
+            <ul class="w3-ul" style="height: 250px; overflow: auto">
+            </ul>
+        </div>
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="scripts/platformOverrides.js"></script>
+        <script type="text/javascript" src="scripts/index.js"></script>
+        <script src="scripts/jquery-3.2.1.min.js"></script>
+    </body>
+</html>

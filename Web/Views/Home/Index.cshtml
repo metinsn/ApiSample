@@ -1,0 +1,26 @@
+﻿@model List<Entity.Models.User>
+@{
+    ViewBag.Title = "Index";
+}
+
+<hr />
+<form class="form-inline" action="/Home/Index" method="post">
+    <div class="form-group">
+        <label for="firstname">Ad: </label>
+        <input type="text" class="form-control" id="firstname" name="FirstName">
+    </div>
+    <div class="form-group">
+        <label for="lastname">Soyad:</label>
+        <input type="text" class="form-control" id="lastname" name="LastName">
+    </div>
+    <button type="submit" class="btn btn-default" style="margin-top: 22px;">Ekle</button>
+</form>
+<hr />
+<h2>User List</h2>
+<ul class="list-group">
+    @foreach (var item in Model)
+    {
+        <li class="list-group-item">@item.FirstName @item.LastName</li>
+    }
+</ul>
+
